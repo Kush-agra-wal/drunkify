@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Drunkify</title>
+<meta name="description" content="Log drinks with friends on trips. Works offline.">
+<meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Drunkify">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-maskable.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="modulepreload" href="js/dom.js">
+<link rel="modulepreload" href="js/store.js">
+<link rel="modulepreload" href="js/sync.js">
+<script>try{var t=localStorage.getItem('td-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<div id="app"><main class="content"><p class="muted center boot">Loading…</p></main></div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<noscript><p class="center">Drunkify needs JavaScript.</p></noscript>
+</body>
+</html>

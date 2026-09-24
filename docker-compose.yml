@@ -1,0 +1,19 @@
+services:
+  drunkify:
+    build: .
+    image: drunkify:latest
+    container_name: drunkify
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - drunkify-data:/data
+    environment:
+      PORT: "8080"
+      DATA_DIR: /data
+      # REGISTRATION_CODE: "change-me"          # require this code to sign up
+      # COOKIE_SECURE: "true"                   # set when served over HTTPS
+      # TRUST_PROXY: "1"                        # set when behind one reverse proxy
+
+volumes:
+  drunkify-data:

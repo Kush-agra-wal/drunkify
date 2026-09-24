@@ -1,0 +1,12 @@
+.git
+node_modules
+data
+test
+*.db
+*.db-wal
+*.db-shm
+Dockerfile
+docker-compose.yml
+.dockerignore
+README.md
+SPEC.md
